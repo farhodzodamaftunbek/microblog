@@ -11,10 +11,10 @@ from app.forms import LoginForm
 @app.route('/index')
 @login_required
 def index():
-    user = {'username': 'Otabek'}
+    user = {'username': 'Maftunbek'}
     posts = [
-        {'author': {'username': 'Abdulaziz'}, 'body': 'Beautiful day in Dushanbe!'},
-        {'author': {'username': 'Ahmadjon'}, 'body': 'The Invincible series was so cool!'}
+        {'author': {'username': 'Behruz'}, 'body': 'Beautiful day in Dushanbe!'},
+        {'author': {'username': 'Abdullo'}, 'body': 'The card house series was so cool!'}
     ]
     return render_template('index.html', title='Home', user=user, posts=posts)
 
